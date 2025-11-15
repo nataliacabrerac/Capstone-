@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+/* Tokens Banco Agrario */
+@theme {
+  --color-ba-green: #1B5E20;
+  --color-ba-green2: #2E7D32;
+  --color-ba-blue: #0D47A1;
+  --color-ba-yellow: #FFB300;
+  --color-ba-brown: #6D4C41;
+  --color-ba-bg: #F7FAF7;
+  --shadow-soft: 0 4px 16px rgba(0,0,0,.08);
+  --radius-xl2: 1.25rem;
+}
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  background: var(--color-ba-bg);
+  color: #0f172a;
+}
+
+/* utilidades UI */
+.container-app { max-width: 1400px; margin: 0 auto; padding: 1rem; }
+.card { background:#fff; border-radius: var(--radius-xl2); box-shadow: var(--shadow-soft); }
+.card-header { padding: 1rem 1.25rem; font-weight: 600; border-bottom: 1px solid #f0f0f0; }
+.card-body { padding: 1rem 1.25rem; }
+.btn { @apply inline-flex items-center gap-2 px-4 py-2 rounded-2xl border border-transparent cursor-pointer; box-shadow: var(--shadow-soft); }
+.btn-primary { background: var(--color-ba-green2); color:#fff; }
+.btn-ghost { background:#fff; border:1px solid #e5e7eb; }
+.input { @apply w-full rounded-xl border border-gray-200 px-3 py-2 bg-white; }
+.select { @apply w-full rounded-xl border border-gray-200 px-3 py-2 bg-white; }
+.badge { @apply inline-flex items-center px-2 py-0.5 text-xs rounded-full; }
+.badge-green { background:#e8f5e9; color: var(--color-ba-green2); }
